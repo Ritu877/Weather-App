@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Zen+Tokyo+Zoo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --blue: #48befe;
+}
+
+html{
+    font-size: 70%;
+}
+
+body{
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sun{
+    height:15rem;
+    width: 20rem;
+    margin: 0;
+}
+
+.box{
+    margin: 0 3rem 3rem;
+    background-color: white;
+    border-radius: 2rem 0 2rem 0;
+    width: 33rem;
+}
+
+
+header{
+    color: rgb(29, 71, 5);
+    font-weight: 700;
+    border-bottom: 1px solid rgb(157, 158, 156);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.inputSection{
+    padding: 2rem 2rem;
+    width: 100%;
+    border: none;
+}
+
+
+.alert{
+    border-radius: 1rem;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: none;
+}
+
+.alert.error{
+    color: rgb(122, 11, 11);
+    border: .2rem solid rgb(235, 123, 123);
+    background-color: rgb(247, 209, 203);
+    display: block;
+}
+
+.alert.pending{
+    color: rgb(9, 104, 17);
+    border: .2rem solid rgb(118, 228, 118);
+    background-color: rgb(192, 241, 192);
+    display: block;
+}
+
+
+#inputBox{
+    border: 1px solid rgb(182, 179, 179);
+    outline: none;
+    height :4.5rem;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+#weather-bodySection{
+    display: none;
+}
+
+.location{
+    font-weight: 400;
+    border-bottom: 1px solid rgb(182, 180, 180);
+    width: 100%;
+    padding: 2rem 2rem 0;
+}
+
+#city{
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+#temp{
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: rgba(5, 11, 63, 0.8);
+    padding: 0;
+    margin: 0;
+}
+
+.condition-Box{
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#condition{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#condImage{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.items{
+    display: flex;
+    padding: 0px 2rem;
+    margin: .5rem 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.items img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.weather-status{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1px 0px;
+    border-top: 1px solid rgb(182, 180, 180);
+    border-bottom: 1px solid rgb(182, 180, 180);
+}
+
+.unitChange{
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.unitChange.active{
+    color: rgb(156, 160, 160);
+}
+
+
+#locationButt{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 5rem;
+    background-color: black;
+    color: white;
+    font-weight: 550;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    transition: all ease 0.4s;
+    border: 0.2rem solid gainsboro;
+}
+
+#locationButt img{
+    width: 6rem;
+}
+
+#locationButt:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 931px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+@media (max-width: 710px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media (max-width: 420) {
+    html {
+        font-size: 40%;
+    }
+}
